@@ -1,5 +1,5 @@
 
-import '../globals.css';
+import './globals.css';
 import CustomCursor from '../components/CustomCursor';
 export const metadata={
   title:'Apdsworks',
