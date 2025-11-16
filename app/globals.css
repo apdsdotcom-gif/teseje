@@ -1,0 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{background:#faf7f0;cursor:none;}
+html{scroll-behavior:smooth;}
+.custom-cursor{position:fixed;width:24px;height:24px;border-radius:999px;background:radial-gradient(circle,#ffe5f3,#ff7ac4,#ff4fa3);box-shadow:0 0 18px rgba(255,192,203,0.9);pointer-events:none;transform:translate(-50%,-50%);transition:0.12s;z-index:9999;}
+.custom-cursor--hover{width:34px;height:34px;box-shadow:0 0 26px rgba(255,192,203,1);}
+@keyframes float-slow{0%{transform:translateY(0)}50%{transform:translateY(10px)}100%{transform:translateY(0)}}
+.float-slow{animation:float-slow 8s ease-in-out infinite;}
+.fade-up{opacity:0;transform:translateY(16px);animation:fade-up 0.8s ease-out forwards;}
+@keyframes fade-up{to{opacity:1;transform:translateY(0)}}
